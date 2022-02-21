@@ -5,7 +5,6 @@
 > Problemnya adalah akan ada banyak file revisi setiap melakukan perubahan
 > 
 
-![Untitled](Version%20Co%208aed7/Untitled.png)
 
 ### Tools
 
@@ -60,7 +59,6 @@ Staging area → repository: git commit
 
 </aside>
 
-![Untitled](Version%20Co%208aed7/Untitled%201.png)
 
 > Git add : add a file as it looks now to your next commit (stage)
 Git commit -m “message”: commit your staged content as a new commit snapshot
@@ -88,9 +86,7 @@ penting untuk menahan file yang tidak perlu diupload ke github
     - —soft: uncommit changes, changes are left staged (index)
     - —hard: uncommit + unstage + delete change, nothing left
 
-![Untitled](Version%20Co%208aed7/Untitled%202.png)
 
-![Untitled](Version%20Co%208aed7/Untitled%203.png)
 
 ### Syncing
 
@@ -111,8 +107,6 @@ penting untuk menahan file yang tidak perlu diupload ke github
 - git merge: Merging 2 branch (make sure u commit before merge)
 
 ### Best Practice
-
-![Untitled](Version%20Co%208aed7/Untitled%205.png)
 
 - Master branch jangan diganggu
 - Jangan langsung edit di development
