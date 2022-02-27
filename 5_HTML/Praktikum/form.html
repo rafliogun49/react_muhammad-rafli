@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <h1>Buat Account Baru!</h1>
+    <h2>Sign Up Form</h2>
+    <form action="welcome.html">
+        <label for ="First Name">First Name:</label><br>
+        <input type="text"></input><br>
+        <br>
+        <label for ="Last Name">Last Name:</label><br>
+        <input type="text"></input><br>
+        <br>
+        <div>
+          <span>Gender: </span>
+          <br>
+          <label for="male">
+            <input type="radio" id="male" name="male" value="Male">
+            Male
+          </label>
+          <br>
+          <label for="female">
+            <input type="radio" id="female" name="female" value="Female" >
+            Female
+          </label>
+          <br>
+          <label for="other">
+            <input type="radio" id="other" name="other" value="Other" >
+            Other
+          </label>
+        </div>
+        <br>
+        <div>
+          <label for="nationality">Nationality</label>
+          <br>
+          <select name="nationality" id="nationality">
+            <option value="indonesia">Indonesia</option>
+            <option value="malaysia">Malaysia</option>
+            <option value="thailand">Thailand</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <span>Language Spoken: </span>
+          <br>
+          <label for="bahasa indonesia">
+            <input type="checkbox" id="bahasa indonesia" name="bahasa indonesia" value="bahasa indonesia">
+            Bahasa Indonesia
+          </label>
+          <br>
+          <label for="english">
+            <input type="checkbox" id="english" name="english" value="english" >
+            English
+          </label>
+          <br>
+          <label for="other">
+            <input type="checkbox" id="other" name="other" value="Other" >
+            Other
+          </label>
+        </div>
+        <br>
+        <div>
+          <label for="bio">Bio:</label><br>
+          <textarea id="bio" name="bio" rows="8" cols="40">
+          </textarea>
+        </div>
+        <input type="submit" value="Sign Up">
+      </form>
+  </body>
+</html>
