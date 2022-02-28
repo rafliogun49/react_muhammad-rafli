@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+/* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility */
+
+body {
+  font-family: "Slabo 27px", serif;
+  font-size: 20px;
+  color: white;
+}
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.flex {
+  display: flex;
+  gap: 150px;
+  justify-content: center;
+}
+.pd1 {
+  padding: 25px 0;
+}
+.box-sm {
+  height: 100px;
+  width: 100px;
+  align-items: center;
+  text-align: center;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.box-md {
+  height: 350px;
+  width: 350px;
+  align-items: center;
+  text-align: center;
+}
+.green {
+  background-color: green;
+}
+.rd1 {
+  border-radius: 20px;
+}
