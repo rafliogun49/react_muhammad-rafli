@@ -11,7 +11,10 @@ property: container, container-fluid
 aturan penulisan: col-[lg,md,sm]-[1-12]
 - Button: Membuat tombol
 aturan: btn-[primary,success,warning,danger,light,link,dark]
+- !important pada CSS untuk mengubah style pada elemen bootstrap
+- Margin n Padding: Implementasinya menggunakan margin: m[t,b,s,e,x,y]-[0 hingga 5], implementasi untuk padding: p[t,b,s,e,x,y]-[0 hingga 5].
 
+Kurang lebih poin yang telah saya tuliskan merupakan dasar dari bootstrap, untuk penggunaan lebih lengkap seperti membuat komponen card, tab, navbar, alert, dan yang lainnya dapat dicari tahu lebih dalam lagi di dokumentasinya yaitu pada https://getbootstrap.com/.
 # Praktikum
 
 Praktikum bootstrap ini kita diminta untuk membuat website bernama eStartup dengan menggunakan assets (css, js, img, dan svg) yang telah disediakan oleh pihak Alterra. Jadi di sini saya hanya mengurus bootstrap untuk HTML dan sedikit mengubah css. Komponen website ini terdiri dari navigasi, section about us, section feature, dan footer.
