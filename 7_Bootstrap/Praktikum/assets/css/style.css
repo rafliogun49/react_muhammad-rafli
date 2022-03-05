@@ -231,11 +231,6 @@ span {
   color: #71c55d;
 }
 
-.navbar-mobile .getstarted,
-.navbar-mobile .getstarted:focus {
-  margin: 15px;
-}
-
 .navbar-mobile .dropdown ul {
   position: static;
   display: none !important;
@@ -299,45 +294,45 @@ section {
   margin-bottom: 30px;
 }
 
-/* get started section */
+/* about section */
 
-#get-started {
+#about {
   height: 100%;
   display: block;
   width: 100%;
 }
 
-#get-started .feature-block {
+#about .about-block {
   background: #fff;
   padding: 30px 20px;
   transition: all 0.5s ease-in-out 0s;
 }
 
 @media (max-width: 1000px) {
-  #get-started .feature-block {
+  #about .about-block {
     margin-bottom: 30px;
   }
 }
 
-#get-started .feature-block:hover {
+#about .about-block:hover {
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease-in-out;
 }
 
-#get-started .feature-block img {
+#about .about-block img {
   height: 60px;
   width: 60px;
   margin-bottom: 30px;
 }
 
-#get-started .feature-block h4 {
+#about .about-block h4 {
   margin-bottom: 20px;
 }
-#get-started .feature-block p {
+#about .about-block p {
   margin-bottom: 24px;
 }
 
-#get-started .feature-block a {
+#about .about-block a {
   color: #505050;
   font-size: 12px;
   font-weight: 600;
@@ -345,21 +340,21 @@ section {
   text-transform: capitalize;
   transition: 0.2s;
 }
-#get-started .feature-block a:hover {
+#about .about-block a:hover {
   color: #71c55d;
 }
 
-/* About us section */
+/* Features section */
 
-#about-us img {
+#feature img {
   max-width: 100%;
 }
 
-#about-us .about-us-content {
+#feature .features-content {
   padding-top: 50px;
 }
 
-#about-us .about-us-content h2 {
+#feature .features-content h2 {
   color: #252525;
   font-size: 39px;
   font-weight: 200;
@@ -367,13 +362,13 @@ section {
   margin-bottom: 20px;
   text-transform: capitalize;
 }
-#about-us .about-us-content span {
+#feature .features-content span {
   font-weight: 700;
   padding-right: 10px;
   text-transform: uppercase;
 }
 
-#about-us .about-us-content ul li {
+#feature .features-content ul li {
   line-height: 36px;
 }
 
