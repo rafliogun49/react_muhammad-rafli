@@ -17,4 +17,4 @@ aturan: btn-[primary,success,warning,danger,light,link,dark]
 Kurang lebih poin yang telah saya tuliskan merupakan dasar dari bootstrap, untuk penggunaan lebih lengkap seperti membuat komponen card, tab, navbar, alert, dan yang lainnya dapat dicari tahu lebih dalam lagi di dokumentasinya yaitu pada https://getbootstrap.com/.
 # Praktikum
 
-Praktikum bootstrap ini kita diminta untuk membuat website bernama eStartup dengan menggunakan assets (css, js, img, dan svg) yang telah disediakan oleh pihak Alterra. Jadi di sini saya hanya mengurus bootstrap untuk HTML dan sedikit mengubah css. Komponen website ini terdiri dari navigasi, section about us, section feature, dan footer.
+Praktikum bootstrap ini kita diminta untuk membuat website bernama eStartup dengan menggunakan assets (js, img, dan svg) yang telah disediakan oleh pihak Alterra. Jadi di sini saya hanya membuat tampilan website menggunakan HTML, Bootstrap, dan external CSS. Komponen website ini terdiri dari navigasi, section about us, section feature, dan footer. Website ini telah bersifat responsive sehingga tampilannya akan menyesuaikan device yang dimiliki oleh user.
