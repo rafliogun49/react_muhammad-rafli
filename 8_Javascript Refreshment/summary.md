@@ -184,3 +184,27 @@ API untuk HTML yang merepresentasikan halaman web pada suatu dokumen menjadi seb
 | onmouseover | mouse diatas object |
 | onmouseout | mouse keluar object |
 | oncopy | copy suatu object |
+
+
+# Praktikum
+
+Pada praktikum kali ini saya menyelesaikan 6 soal dari Alterra menggunakan website [Repl.it](http://Repl.it) sebagai text editor yang menyediakan environment node.js. 
+
+Pada soal pertama, saya berhasil mengatur code javascript saya sehingga menghasilkan output seperti ini:
+
+> Budi terdaftar sebagai kegiatan kampus merdeka
+array = Budi
+a adalah = kampus merdeka
+b adalah = kampus merdeka
+perkenalkan nama saya Budi nomor urut kampus merdeka sekarang sedang mengikuti kampus merdeka berasal dari indonesia
+> 
+
+Kemudian pada soal kedua, saya memberikan penjelasan bahwa jika “let terdaftar = false”, maka fungsi “if” pada baris ke-21 tidak akan dieksekusi, karena fungsi if hanya menerima value variabel terdaftar adalah true. Kemudian saya juga memberikan penjelasan bahwa nilai const tidak dapat diubah, sehingga pemberian nilai baru pada variabel name di baris-ke 26 akan mengakibatkan error. Terakhir, saya menjelaskan bahwa code ini akan tetap error meskipun code pada baris ke-26 dihapus, karena variabel asal bukanlah variabel yang memiliki scope global.
+
+Pada soal ketiga, saya melakukan destructuring.
+
+Pada soal keempat, saya menggunakan method .map untuk mengambil setiap nilai pada array, kemudian setiap nilai tersebut yang memiliki karakter “-” akan diubah menjadi “/”, lalu data tersebut akan dimasukkan ke dalam array variabel newBdays. 
+
+Pada soal kelima, saya menggunakan method map untuk mengambil setiap nilai pada array, kemudian setiap nilai tersebut akan dikali 2, lalu data tersebut dimasukkan ke dalam array variabel doubleValue.
+
+Pada soal keenam, saya menggunakan method map untuk mengambil seetiap nilai pada array, kemudian setiap nilai tersebut akan dibulatkan menjadi bilangan bulat menggunakan Math.round(), lalu data tersebut akan dimasukkan ke dalam array variabel roundArr.
