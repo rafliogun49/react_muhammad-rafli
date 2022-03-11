@@ -26,12 +26,16 @@ class UserService {
     this.users = ["arman", "maulana"];
   }
 
+  //ambil seluruh data user
+
   getAllUsers() {
     return this.users;
   }
 
+  // ambil data user berdasarkan id-nya
+
   getUserById(userId) {
-    return this.users.filter((user) => user === userId);
+    return this.users.filter(user => user === userId);
   }
 }
 ```
