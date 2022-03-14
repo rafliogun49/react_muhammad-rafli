@@ -12,8 +12,8 @@ function App() {
       <Navbar text="Todo App" />
       <div className="d-flex flex-column justify-content-center">
         <BigTitle text="Todos" />
-        <section className="d-flex flex-column gap-3 container justify-content-center">
-          {todos}
+        <section className="container">
+          <div className="row justify-content-center gap-2">{todos}</div>
         </section>
       </div>
     </div>
