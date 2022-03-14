@@ -13,7 +13,7 @@ function App() {
       <div className="d-flex flex-column justify-content-center">
         <BigTitle text="Todos" />
         <section className="container">
-          <div className="row justify-content-center gap-2">{todos}</div>
+          <div className="row justify-content-center gap-3">{todos}</div>
         </section>
       </div>
     </div>
