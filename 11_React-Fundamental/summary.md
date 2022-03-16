@@ -18,3 +18,7 @@ Beberapa hal yang penting dalam penggunaan React adalah sebagai berikut:
   - Kita dapat melakukannya pada file terpisah (index.css)
   - Inline styling pada atribut JSX
   - Menggunakan modul CSS
+
+# Praktikum
+
+Pada praktikum ini saya membuat UI design Todo App dengan menggunakan data yang telah disediakan oleh pihak alterra. Jika data poin Todonya memiliki nilai complete sama dengan true, maka akan merender card dengan background biru dan tulisan berwarna putih. Sedangkan jika nilai completenya bernilai false maka akan merender card dengan background putih, tulisan abu-abu, serta tulisannya tercoret.
