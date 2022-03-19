@@ -30,14 +30,18 @@ Parameter URL berguna untuk menciptakan paginasi, sort n filter data, pencarian,
 **Hook Routing React**
 
 - **useHistory**: memberi akses ke instance riwayat yang dapat digunakan untuk bernavigasi.
-  | Property  | Kegunaan                                                           |
+  | Property | Kegunaan |
   | --------- | ------------------------------------------------------------------ |
-  | length    | (angka) Jumlah entri dalam tumpukan riwayat                        |
-  | go        | (fungsi) Memindahkan penunjuk di tumpukan riwayat sebanyak n entri |
-  | goBack    | (fungsi) Setara dengan go(-1)                                      |
-  | goForward | (fungsi) Setara dengan go(1)                                       |
-  | push      | (fungsi) Mendorong entri baru ke tumpukan riwayat                  |
-  | replace   | (fungsi) Mengganti entri saat ini di tumpukan riwayat history      |
+  | length | (angka) Jumlah entri dalam tumpukan riwayat |
+  | go | (fungsi) Memindahkan penunjuk di tumpukan riwayat sebanyak n entri |
+  | goBack | (fungsi) Setara dengan go(-1) |
+  | goForward | (fungsi) Setara dengan go(1) |
+  | push | (fungsi) Mendorong entri baru ke tumpukan riwayat |
+  | replace | (fungsi) Mengganti entri saat ini di tumpukan riwayat history |
 - **useLocation:** mengembalikan objek lokasi yang mewakili URL saat ini. konsepnya mirip dengan useState
 - **useParams:** mengembalikan objek berisi key dan nilai URL. Digunakan untuk mengakses match.params dari Route saat ini.
 - **useRouteMatch:** mencocokkan URL saat ini sama dengan cara seperti <Route>.
+
+# Praktikum
+
+Pada praktikum ini saya membuat 4 halaman website yang terdiri dari home, about-app, about-author, dan not found page. Objektif utama dari praktikum ini adalah melakukan routing pada website Todo App menggunakan react-routing-dom keenam. Jika URLnya berakhiran "/" maka akan mengarahkan kita ke halaman home, URL "about/about-app" mengarahkan kita ke halaman about-app, URL "about/about-author" mengarahkan kita ke halaman about-author, di luar URL tersebut akan mengarahkan ke halaman not found.

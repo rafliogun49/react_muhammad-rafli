@@ -16,7 +16,7 @@ const TodoItem = (props) => {
           </div>
           <div className="col-4 text-end">
             <button
-              className={props.completed ? "btn btn-outline-light" : "btn btn-outline-primary"}
+              className={props.completed ? "btn btn-outline-light" : "btn btn-outline-secondary"}
             >
               <i className="bi bi-trash"></i>
             </button>
