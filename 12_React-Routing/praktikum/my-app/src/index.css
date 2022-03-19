@@ -22,12 +22,15 @@ body {
 }
 
 .todo {
-  background: #198cff;
-  color: #fff;
   box-shadow: -2px 0px 4px rgba(26, 28, 51, 0.25), 2px 4px 4px rgba(26, 28, 51, 0.25);
   border-radius: 10px;
   border: 1px solid rgba(94, 95, 101, 0.4);
   text-align: center;
+}
+
+.todo.active {
+  background: #198cff;
+  color: #fff;
 }
 
 .todo.inactive {
