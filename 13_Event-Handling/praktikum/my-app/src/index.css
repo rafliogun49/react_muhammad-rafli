@@ -1,13 +1,80 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+body {
+  font-family: "Nunito-Sans", sans-serif;
+  height: 100vh;
+  background: #fafcff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo-app {
+  font-weight: 700;
+  color: #1c232d;
+}
+
+.big-title {
+  font-weight: 700;
+  font-size: 72px;
+  color: #1c232d;
+}
+
+.todo {
+  box-shadow: -2px 0px 4px rgba(26, 28, 51, 0.25), 2px 4px 4px rgba(26, 28, 51, 0.25);
+  border-radius: 10px;
+  border: 1px solid rgba(94, 95, 101, 0.4);
+  text-align: center;
+}
+
+.todo.active {
+  background: #198cff;
+  color: #fff;
+}
+
+.todo.inactive {
+  background: #fff;
+  color: #5e5f65;
+}
+
+.todo-title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.todo-title.strike {
+  text-decoration: line-through;
+  color: #5e5f65;
+}
+
+.menu {
+  width: 250px;
+  height: 100vh;
+}
+
+#close {
+  margin-top: 1em;
+}
+
+.bi.bi-x-lg {
+  color: white;
+}
+
+.about-menu {
+  min-height: 100vh;
+}
+
+.description {
+  color: #5e5f65;
+}
+
+.not-found {
+  height: 100vh;
+}
+
+.box {
+  width: 2em;
+  height: 2em;
 }
