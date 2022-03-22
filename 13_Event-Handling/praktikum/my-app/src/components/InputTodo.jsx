@@ -39,8 +39,6 @@ class InputTodo extends Component {
                 value={this.state.title}
                 name="title"
                 placeholder="What's to do for today?"
-                aria-label="todo"
-                aria-describedby="basic-addon2"
                 onChange={this.handleChange}
               />
               <div class="input-group-append">
