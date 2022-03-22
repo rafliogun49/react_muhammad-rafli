@@ -1,5 +1,5 @@
+import CompleteIndicator from "./CompleteIndicator";
 import TodoItem from "./TodoItem";
-
 const ListTodo = ({todoData, removeTodo}) => {
   const todos = todoData.map((todo) => {
     return (
@@ -14,7 +14,10 @@ const ListTodo = ({todoData, removeTodo}) => {
   });
   return (
     <section className="container">
-      <div className="row justify-content-center gap-3">{todos}</div>
+      <div className="row justify-content-center gap-3 mb-5">
+        <CompleteIndicator />
+        {todos}
+      </div>
     </section>
   );
 };

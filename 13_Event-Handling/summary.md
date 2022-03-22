@@ -15,3 +15,11 @@
 Komponen stateful memiliki state. State merupakan data private sebuah komponen sehingga tidak dapat diakses dari komponen lain. Ciri-ciri state adalah data tersebut dapat dimodifikasi dengan memakai setState, setiap perubahan data akan membuat render ulang, bersifat asynchronous, dan dipakai dalam class.
 
 Props dan state itu berbeda, tapi kita dapat menggunakannya secara bersamaan dalam membangun suatu komponen. Props bersifat read only dan tidak dapat dimodifikasi, sedangkan state dapat diubah secara asynchronous serta dapat dimodifikasi menggunakan setState.
+
+# Praktikum
+
+Pada praktikum ini saya membuat Todo App yang telah berfungsi menggunakan React Component, React Router 6, dan Bootstrap. Fitur yang ada dalam website ini adalah:
+
+- Dapat menghapus todo
+- Dapat mengubah status completed dengan cara menekan componentnya
+- Dapat melakukan input todo
