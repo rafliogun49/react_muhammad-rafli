@@ -25,6 +25,15 @@ Controlled: setiap melakukan perubahan dalam, kita memanggil fungsi onChange unt
 | textarea | value="string"       | onChange        | event.target.value    |
 | select   | value="option value" | onChange        | event.target.value    |
 
+### Validation
+
+Ada dua tipe validasi:
+
+- Validasi client side menggunakan fitur validasi HTML atau menggunakan code javascript
+- Server side: validasi sebelum masuk ke database, biasanya setelah user menekan submit.
+
+Yang saya pelajari pada kali ini adalah menerapkan kode javascript dan menggunakan atribut HTML untuk validasi. Validasi menggunakan atribut required, minlength, maxlength, min, max, type, dan pattern. Validasi javascript dapat diterapkan ketika kita memanggil fungsi seperti onChange, onClick, onSubmit, dll.
+
 # Praktikum
 
 Pada praktikum ini saya membuat sebuah website form pendaftaran peserta coding bootcamp yang berisi nama (wajib huruf), email (wajib menggunakan format email), nomor telpon (wajib nomor sejumlah 9-14 karakter), latar belakang pendidikan, foto surat kesungguhan, harapan peserta.
