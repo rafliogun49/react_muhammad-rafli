@@ -93,7 +93,7 @@ function App() {
     } else {
       alert("Data pendaftar tidak sesuai");
     }
-    setData(baseError);
+    resetData();
   };
 
   const resetData = () => {
