@@ -79,8 +79,6 @@ function App() {
       }
     }
 
-    console.log(data);
-    console.log(errorMessage);
     setData({
       ...data,
       [name]: value,
