@@ -42,6 +42,7 @@ function App() {
         });
       }
     }
+
     if (name === "email") {
       if (emailPattern.test(value)) {
         setErrorMessage({
@@ -92,6 +93,7 @@ function App() {
     } else {
       alert("Data pendaftar tidak sesuai");
     }
+    setData(baseError);
   };
 
   const resetData = () => {
