@@ -16,7 +16,7 @@ function App() {
     phoneNumber: "",
   };
 
-  const suratKesungguhan = useRef("");
+  const suratKesungguhan = useRef(null);
   const [data, setData] = useState(baseData);
   const [errorMessage, setErrorMessage] = useState(baseError);
   const regex = /^[A-Za-z ]*$/;
