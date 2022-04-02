@@ -1091,6 +1091,7 @@ const data = [
           memiliki kegunaan yang berbeda yaitu var, let, dan const. Agar variabel dapat digunakan,
           kita perlu mendeklarasikan variabel terlebih dahulu.
         </p>
+        <div class="table-responsive">
         <table id="6649400f-bedb-4793-993d-e94f325606fb" class="simple-table">
           <thead>
             <tr id="2bb034e5-6a29-475d-8942-9ac6f86b75c2">
@@ -1127,6 +1128,7 @@ const data = [
             </tr>
           </tbody>
         </table>
+        </div>
         <p id="a036eaeb-275b-458c-a7a2-ebcd47093fa1" class=""></p>
         <h2 id="3efc5956-5871-4f78-af74-805dcd55e867" class="">Value and Reference</h2>
         <p id="c769029a-cfa9-4fcd-ba94-f05d67e75486" class="">
@@ -1191,6 +1193,7 @@ console.log(c) //{a:1, b:2}</code></pre>
           Method merupakan sebuah fungsi yang dapat dijalankan pada objek, sehingga memudahkan
           proses pengolahan data.
         </p>
+        <div class="table-responsive">
         <table id="e7aa8631-36fc-4b03-aefd-43987edca809" class="simple-table">
           <tbody>
             <tr id="ac46931a-9926-408f-8544-8643522b7adf">
@@ -1229,12 +1232,14 @@ console.log(c) //{a:1, b:2}</code></pre>
             </tr>
           </tbody>
         </table>
+        </div>
         <h2 id="3d9e3f27-8c35-4b18-b865-d593680ca6a2" class="">Control Flow</h2>
         <p id="18195e5a-2244-4c1a-a9c7-3ef371347e61" class="">
           Secara default kode akan dieksekusi dari atas ke bawah atau dari kiri ke kanan secara
           berurutan (synchronous). Tapi kenyataannya kita dapat mengatur alur eksekusi kode sesuai
           keinginan kita dengan menggunakan looping serta conditioning.
         </p>
+        <div class="table-responsive">
         <table id="6b242aca-edb0-40a8-b40d-cd8f2aaf549f" class="simple-table">
           <tbody>
             <tr id="b58525fa-06ad-4ccd-a381-2ac402356f61">
@@ -1262,6 +1267,7 @@ console.log(c) //{a:1, b:2}</code></pre>
             </tr>
           </tbody>
         </table>
+        </div>
         <h2 id="3b0d834e-7fdc-49b6-bd78-2256e8e5590e" class="">Function</h2>
         <p id="ef904583-8955-4618-bfb7-3c6d709cd40f" class="">
           Serangkaian prosedur yang dapat digunakan berulang kali
@@ -1349,6 +1355,8 @@ console.log(&quot;Berhenti&quot;)
         <ul id="a06dfaea-c5ce-45e7-adb5-cffd00d75ce1" class="bulleted-list">
           <li style="list-style-type: disc">DOM Selection Method:</li>
         </ul>
+        <div className="">
+        <div class="table-responsive">
         <table id="5c92e2eb-7891-477c-8367-da40a5dbd81c" class="simple-table">
           <thead>
             <tr id="87ded66b-0dc1-475f-83bb-48af8200f499">
@@ -1379,9 +1387,11 @@ console.log(&quot;Berhenti&quot;)
             </tr>
           </tbody>
         </table>
+        </div>
         <ul id="bd76799f-4559-4527-b204-b7a70373511d" class="bulleted-list">
           <li style="list-style-type: disc">DOM Manipulation</li>
         </ul>
+        <div className="table-responsive">
         <table id="b418ee34-93f9-4a3b-b5a6-4aca5e492d58" class="simple-table">
           <thead>
             <tr id="e59c6bdc-67d6-4e54-8eef-33da06a12482">
@@ -1408,9 +1418,11 @@ console.log(&quot;Berhenti&quot;)
             </tr>
           </tbody>
         </table>
+        </div>
         <ul id="9f0e8eab-37b0-4173-a432-6917931a352e" class="bulleted-list">
           <li style="list-style-type: disc">DOM Event</li>
         </ul>
+        <div class="table-responsive">
         <table id="e95eaf46-c934-4f9f-acda-a9331788203b" class="simple-table">
           <thead>
             <tr id="2a2707b8-f6bf-43ea-89aa-2da421373b67">
@@ -1445,6 +1457,7 @@ console.log(&quot;Berhenti&quot;)
             </tr>
           </tbody>
         </table>
+        </div>
         <h1 id="e03e1f93-20b7-4319-b019-12de927c55be" class="">Praktikum</h1>
         <p id="d2dab303-7ec1-4422-b158-4fdf9e6c70b1" class="">
           Pada praktikum kali ini saya menyelesaikan 6 soal dari Alterra menggunakan website
