@@ -1727,7 +1727,7 @@ console.log(&quot;Berhenti&quot;)
 
 const textContainer = document.getElementById("pills-tabContent");
 const content = () => {
-  const allData = data.map((item) => {
+  data.map((item) => {
     const div = document.createElement("div");
     div.id = `pills-${item.name}`;
     div.className = `tab-pane fade show p-5 ${item.active && "active"}`;
