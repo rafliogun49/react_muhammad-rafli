@@ -1015,7 +1015,7 @@ const data = [
       </ul>
       <ul id="d3c27ee2-6e55-4e53-8aa1-a24b79a8e352" class="bulleted-list">
         <li style="list-style-type: disc">
-          Button: Membuat tombol aturan: btn-[primary,success,warning,danger,light,link,dark]
+          Button: Membuat tombol aturan: btn-primary, success, warning, danger, light, link, dark
         </li>
       </ul>
       <p id="c07190b8-709b-476c-bab1-be5a88b6dfee" class=""></p>
@@ -1388,7 +1388,7 @@ console.log(&quot;Berhenti&quot;)
         <ul id="bd76799f-4559-4527-b204-b7a70373511d" class="bulleted-list">
           <li style="list-style-type: disc">DOM Manipulation</li>
         </ul>
-        <div className="table-responsive">
+        <div class="table-responsive">
         <table id="b418ee34-93f9-4a3b-b5a6-4aca5e492d58" class="simple-table">
           <thead>
             <tr id="e59c6bdc-67d6-4e54-8eef-33da06a12482">
