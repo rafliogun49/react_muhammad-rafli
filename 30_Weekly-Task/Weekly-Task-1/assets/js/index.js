@@ -892,9 +892,6 @@ const data = [
         </p>
         <h3 id="70b937d4-72c1-4fdb-8558-a9310d2e6f3f" class="">CSS Margin dan Padding</h3>
         <figure id="46364722-50f3-4c28-a0c8-ce2d2810729d" class="image">
-          <a href="CSS%2046364/Untitled.png"
-            ><img style="width: 235px" src="CSS%2046364/Untitled.png"
-          /></a>
         </figure>
         <p id="2b6990a6-8e89-4d6d-ae86-8eae149119dd" class="">
           Pada dasarnya setiap komponen memiliki struktur seperti gambar berikut. Untuk mengatur
@@ -1729,17 +1726,14 @@ console.log(&quot;Berhenti&quot;)
 ];
 
 const textContainer = document.getElementById("pills-tabContent");
-
 const content = () => {
   const allData = data.map((item) => {
-    return `<div
-      class="tab-pane fade show p-5 ${item.active && "active"}"
-      id="pills-${item.name}"
-      role="tabpanel"
-      aria-labelledby="pills-${item.name}-tab"
-    >${item.text}</div>`;
+    const div = document.createElement("div");
+    div.id = `pills-${item.name}`;
+    div.className = `tab-pane fade show p-5 ${item.active && "active"}`;
+    div.innerHTML += item.text;
+    textContainer.append(div);
   });
-  textContainer.innerHTML = allData;
 };
 
 window.addEventListener("load", content());
