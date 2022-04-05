@@ -25,9 +25,14 @@ const todoSlice = createSlice({
     addTodo: (state, action) => {
       state.data = [...state.data, action.payload];
     },
+    changeTodoStatus: (state, action) => {
+      let temp = [...state.data];
+      temp[action.payload].completed = !temp[action.payload].completed;
+      state.data = temp;
+    },
   },
 });
 
-export const {removeTodo, addTodo} = todoSlice.actions;
+export const {removeTodo, addTodo, changeTodoStatus} = todoSlice.actions;
 
 export default todoSlice;
