@@ -3,10 +3,6 @@ import todoSlice from "./todo-slice";
 import storage from "redux-persist/lib/storage";
 import {persistReducer, persistStore} from "redux-persist";
 
-// const store = configureStore({
-//   reducer: {todo: todoSlice.reducer},
-// });
-
 const reducers = combineReducers({
   todo: todoSlice.reducer,
 });
