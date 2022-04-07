@@ -1,6 +1,10 @@
 import {useState} from "react";
+import {connect} from "react-redux";
+import {removeTodo} from "../store/todo-slice";
 
 const TodoItem = (props) => {
+  const {todo, dispatchRemoveTodo} = props;
+
   const [todoStatus, setTodoStatus] = useState(props.completed);
 
   const switchTodoStatus = () => {
@@ -9,6 +13,7 @@ const TodoItem = (props) => {
 
   return (
     <div
+      key={props.id}
       onClick={switchTodoStatus}
       className={
         todoStatus ? "todo inactive col-lg-6 col-md-8 p-2" : "todo active col-lg-6 col-md-8 p-2"
@@ -21,7 +26,7 @@ const TodoItem = (props) => {
           </div>
           <div className="col-4 text-end">
             <button
-              onClick={() => props.removeTodo(props.id)}
+              onClick={() => dispatchRemoveTodo(props.id)}
               className={todoStatus ? "btn btn-outline-secondary" : "btn btn-outline-light"}
             >
               <i className="bi bi-trash"></i>
@@ -33,4 +38,15 @@ const TodoItem = (props) => {
   );
 };
 
-export default TodoItem;
+const mapStateToProps = (state) => {
+  return {
+    todo: state.todo.data,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    dispatchRemoveTodo: (payload) => dispatch(removeTodo(payload)),
+  };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(TodoItem);
