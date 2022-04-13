@@ -8,12 +8,13 @@ Link [Whimsical](https://whimsical.com/algoritma-rafli-GD4Mx5ZsrJbv39TRb67pTJ)
 
 1. User menginput angka ke dalam sistem (N)
 2. Pendefinisikan variabel I dengan nilai 2 karena bilangan prima dimulai dari 2
-3. Pengecekan apakah nilai input (N) lebih dari I. Jika tidak, maka nilai tersebut akan dianggap bilangan prima. Namun jika iya, maka proses akan dilanjutkan
-4. Pengecekan apakah nilai input (N) dapat habis dibagi I. Jika iya, maka bilangan tersebut dapat dipastikan bilangan bukan prima. Jika tidak, maka nilai I akan ditambah 1 dan terjadi looping ke tahap ketiga hingga nilai N lebih dari I.
-5. Mencetak nilai
-6. Selesai
+3. Pengecekan apakah nilai input (N) lebih dari 1. Jika tidak maka bilang tersebut bukanlah bilangan prima. Namun jika iya, maka proses dapat dilanjutkan
+4. Pengecekan apakah nilai input (N) lebih dari I. Jika tidak, maka nilai tersebut akan dianggap bilangan prima. Namun jika iya, maka proses akan dilanjutkan
+5. Pengecekan apakah nilai input (N) dapat habis dibagi I. Jika iya, maka bilangan tersebut dapat dipastikan bilangan bukan prima. Jika tidak, maka nilai I akan ditambah 1 dan terjadi looping ke tahap ketiga hingga nilai N lebih dari I.
+6. Mencetak nilai
+7. Selesai
 
-![image](../screenshots/check-prime-number.png)
+![image](../screenshots/check-primeNumber.png)
 
 ### Check Lamp Status
 
