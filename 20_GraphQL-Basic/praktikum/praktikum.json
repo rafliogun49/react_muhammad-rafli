@@ -1,26 +1,58 @@
 {
-  "praktikum-graphql": [
+    "instruksi6": {
+        query MyQuery {
+            anggota_aggregate(where: {keterangans: {status: {_eq: true}}}) {
+                nodes {
+                    nama
+                }
+            }
+        }
+    }, 
     {
-      "id": 1,
-      "title": "instruksi-ke-6",
-      "photos": [
-        "../screenshots/instruksi-ke-6/instruksi-ke-6.png",
-        "../screenshots/instruksi-ke-6/validasi-soal-no-6.png"
-      ]
+    "instruksi7": {
+        query MyQuery {
+            anggota {
+              id
+              nama
+              keterangans {
+                nilai
+                pelajaran
+                status
+              }
+            }
+          }
+          
+          mutation MyMutation {
+            insert_keterangan_one(object: {id: 5, id_anggota: 3, nilai: 90, pelajaran: "Sistem Informasi", status: true})
+          }
+          
+          mutation MyMutation2 {
+            insert_keterangan_one(object: {id: 6, id_anggota: 3, nilai: 55, pelajaran: "React", status: false})
+          }
+          
+        }
     },
     {
-      "id": 2,
-      "title": "instruksi-ke-7",
-      "photos": [
-        "../screenshots/instruksi-ke-7/instruksi-ke-7.png",
-        "../screenshots/instruksi-ke-7/mutasi-data-ke-5-instruksi-ke-7.png",
-        "../screenshots/instruksi-ke-7/mutasi-data-ke-6-instruksi-ke-7.png"
-      ]
-    },
-    {
-      "id": 3,
-      "title": "instruksi-ke-8",
-      "photos": ["../screenshots/instruksi-ke-8/instruksi-ke-8.png"]
+        "instruksi8": {
+            query MyQuery {
+                anggota {
+                  id
+                  nama
+                  keterangans {
+                    id
+                    id_anggota
+                    nilai
+                    pelajaran
+                    status
+                  }
+                }
+              }
+              
+              mutation MyMutation {
+                update_keterangan(where: {status: {_eq: false}}, _set: {status: true})
+              }
+              
+        }
     }
-  ]
 }
+    
