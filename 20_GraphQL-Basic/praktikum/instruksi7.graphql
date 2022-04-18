@@ -1,0 +1,21 @@
+query MyQuery {
+            anggota {
+              id
+              nama
+              keterangans {
+                nilai
+                pelajaran
+                status
+              }
+            }
+          }
+          
+          mutation MyMutation {
+            insert_keterangan_one(object: {id: 5, id_anggota: 3, nilai: 90, pelajaran: "Sistem Informasi", status: true})
+          }
+          
+          mutation MyMutation2 {
+            insert_keterangan_one(object: {id: 6, id_anggota: 3, nilai: 55, pelajaran: "React", status: false})
+          }
+          
+        }

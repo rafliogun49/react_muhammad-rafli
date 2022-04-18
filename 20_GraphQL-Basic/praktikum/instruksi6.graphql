@@ -1,0 +1,7 @@
+query MyQuery {
+  anggota_aggregate(where: {keterangans: {status: {_eq: true}}}) {
+    nodes {
+      nama
+    }
+  }
+}

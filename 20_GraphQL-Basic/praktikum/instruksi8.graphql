@@ -1,0 +1,17 @@
+query MyQuery {
+  anggota {
+    id
+    nama
+    keterangans {
+      id
+      id_anggota
+      nilai
+      pelajaran
+      status
+    }
+  }
+}
+
+mutation MyMutation {
+  update_keterangan(where: {status: {_eq: false}}, _set: {status: true})
+}
