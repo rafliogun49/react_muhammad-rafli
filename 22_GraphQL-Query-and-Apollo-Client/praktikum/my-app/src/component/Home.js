@@ -6,12 +6,26 @@ import Header from "./Header";
 import {gql, useQuery} from "@apollo/client";
 import Loading from "./Loading";
 
+//This is unfinished project
+//Jangan dinilai dulu
+//masih kurang satu fitur
+
 const GetPassengerList = gql`
   query MyQuery {
     passenger {
       nama
       umur
       jenis_kelamin
+    }
+  }
+`;
+
+const GetQueryFromId = gql`
+  query MyQuery($id: Int!) {
+    passenger_by_pk(id: $id) {
+      jenis_kelamin
+      nama
+      umur
     }
   }
 `;
