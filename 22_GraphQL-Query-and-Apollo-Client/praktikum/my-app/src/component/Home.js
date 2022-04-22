@@ -1,18 +1,15 @@
-import {Component} from "react";
+import {Component, useEffect} from "react";
 import {v4 as uuidv4} from "uuid";
 import PassengerInput from "./PassengerInput";
 import ListPassenger from "./ListPassenger";
 import Header from "./Header";
-import {gql, useQuery} from "@apollo/client";
+import {gql, useLazyQuery, useQuery} from "@apollo/client";
 import Loading from "./Loading";
-
-//This is unfinished project
-//Jangan dinilai dulu
-//masih kurang satu fitur
 
 const GetPassengerList = gql`
   query MyQuery {
     passenger {
+      id
       nama
       umur
       jenis_kelamin
@@ -23,6 +20,7 @@ const GetPassengerList = gql`
 const GetQueryFromId = gql`
   query MyQuery($id: Int!) {
     passenger_by_pk(id: $id) {
+      id
       jenis_kelamin
       nama
       umur
@@ -31,7 +29,8 @@ const GetQueryFromId = gql`
 `;
 
 const Home = () => {
-  const {data, loading, error} = useQuery(GetPassengerList);
+  const [fetchDataById, {data, loading, error}] = useLazyQuery(GetQueryFromId);
+  const {data: response, loading: isLoading} = useQuery(GetPassengerList);
 
   if (error) {
     console.log(error);
@@ -40,7 +39,17 @@ const Home = () => {
   return (
     <div>
       <Header />
-      {loading ? <Loading /> : <ListPassenger data={data} hapusPengunjung={hapusPengunjung} />}
+      {isLoading || loading ? (
+        <Loading />
+      ) : (
+        <ListPassenger
+          data={response}
+          singleData={data}
+          hapusPengunjung={hapusPengunjung}
+          fetchDataById={fetchDataById}
+          loading={loading}
+        />
+      )}
       <PassengerInput tambahPengunjung={tambahPengunjung} />
     </div>
   );

@@ -1,15 +1,26 @@
 import {useState} from "react";
 import ListItem from "./ListItem";
-const ListPassenger = ({data, hapusPengunjung}) => {
-  const [id, setId] = useState(null);
+const ListPassenger = ({data, hapusPengunjung, fetchDataById, singleData}) => {
+  const [uid, setUid] = useState("");
 
   const handleInput = (e) => {
-    setId(e.target.value);
+    setUid(e.target.value);
   };
 
   const submitInput = () => {
-    console.log(id);
+    if (uid === "") {
+      return alert("jangan dikosongin");
+    } else if (parseInt(uid) < 1 || parseInt(uid) > 5) {
+      return alert("isi nilai dari 1 - 5");
+    } else {
+      fetchDataById({
+        variables: {
+          id: parseInt(uid),
+        },
+      });
+    }
   };
+
   return (
     <div>
       <input placeholder="Cari id" onChange={handleInput} />
@@ -18,14 +29,20 @@ const ListPassenger = ({data, hapusPengunjung}) => {
       <br />
       <table cellPadding="5px" cellSpacing="0" style={{margin: "auto"}}>
         <thead bgcolor="red">
-          <td>Nama</td>
-          <td>Umur</td>
-          <td>Jenis Kelamin</td>
-          <td bgcolor="white" className="removeBorder"></td>
+          <tr>
+            <td>Nama</td>
+            <td>Umur</td>
+            <td>Jenis Kelamin</td>
+            <td bgcolor="white" className="removeBorder"></td>
+          </tr>
         </thead>
-        {data?.passenger.map((item) => (
-          <ListItem key={item.id} data={item} hapusPengunjung={hapusPengunjung()} />
-        ))}
+        {singleData ? (
+          <ListItem data={singleData.passenger_by_pk} />
+        ) : (
+          data?.passenger.map((item) => (
+            <ListItem key={item.id} data={item} hapusPengunjung={hapusPengunjung()} />
+          ))
+        )}
       </table>
     </div>
   );

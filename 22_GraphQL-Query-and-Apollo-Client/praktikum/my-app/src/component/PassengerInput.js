@@ -86,9 +86,7 @@ function PassengerInput(props) {
         />
         <p>Masukkan Jenis Kelamin Anda</p>
         <select onChange={onChange} name="jenisKelamin">
-          <option value="Pria" selected>
-            Pria
-          </option>
+          <option value="Pria">Pria</option>
           <option value="Wanita">Wanita</option>
         </select>
         <p></p>
