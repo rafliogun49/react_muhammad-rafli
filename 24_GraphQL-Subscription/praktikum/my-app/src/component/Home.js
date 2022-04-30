@@ -3,7 +3,7 @@ import {v4 as uuidv4} from "uuid";
 import PassengerInput from "./PassengerInput";
 import ListPassenger from "./ListPassenger";
 import Header from "./Header";
-import {gql, useLazyQuery, useQuery, useMutation, useSubscription} from "@apollo/client";
+import {gql, useLazyQuery, useQuery, useMutation} from "@apollo/client";
 import Loading from "./Loading";
 
 const GetPassengerList = gql`
@@ -57,29 +57,9 @@ const UpdatePassenger = gql`
   }
 `;
 
-const SubscribePassenger = gql`
-  subscription MySubscription {
-    passenger {
-      id
-      jenis_kelamin
-      nama
-      umur
-    }
-  }
-`;
-
 const Home = () => {
   const [fetchDataById, {data, loading, error}] = useLazyQuery(GetQueryFromId);
-  const {data: response, loading: isLoading, subscribeToMore} = useSubscription(SubscribePassenger);
-  useEffect(() => {
-    subscribeToMore({
-      document: SubscribePassenger,
-      updateQuery: (prev, {subscriptionData: {response}}) => {
-        return console.log(response);
-      },
-    });
-  }, []);
-
+  const {data: response, loading: isLoading, refetch} = useQuery(GetPassengerList);
   const [insertPassenger, {loading: loadingInsert}] = useMutation(InsertPassenger, {
     refetchQueries: [GetPassengerList],
   });
